@@ -8,12 +8,12 @@ export default function HomePage() {
             >
                 <img
                     className="absolute top-0 left-0 w-full h-full object-cover bg-aura-animate"
-                    src="./images/bg-dark-blue-aura.png"
+                    src="/images/bg-dark-blue-aura.png"
                     alt="bg-dark-blue-aura"
                 />
                 <img
                     className="absolute top-0 left-0 w-full h-full object-cover object-left bg-photo"
-                    src="./images/IMG_9260.jpg"
+                    src="/images/IMG_9260.jpg"
                     alt="IMG_9260"
                 />
 

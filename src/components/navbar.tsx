@@ -9,7 +9,7 @@ export default function Navbar() {
                 isHomePage ? "navbar-home-animate" : ""
             }`}
         >
-            <ul className="w-auto sm:w-[20%] hidden sm:block sm:flex items-center justify-center sm:justify-left space-x-6">
+            <ul className="w-auto sm:w-[20%] hidden sm:flex items-center justify-center sm:justify-left space-x-6">
                 <a href="https://any.in.th" title="Any">
                     <img
                         alt="Any"
