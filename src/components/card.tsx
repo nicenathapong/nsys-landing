@@ -1,17 +1,25 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
 
 export function FactCard({
     title,
     content,
+    isLoveEasterEgg,
 }: {
     title: string;
     content: string;
+    isLoveEasterEgg?: boolean;
 }) {
     return (
         <BaseCard>
             <p className="text-white/40">{title}</p>
-            <h1 className="text-xl font-semibold">{content}</h1>
+            {isLoveEasterEgg ? (
+                <Link to="https://m307.dev" className="text-xl font-semibold transition duration-500 ease-in-out hover:text-blue-500">
+                    {content}
+                </Link>
+            ) : (
+                <h1 className="text-xl font-semibold">{content}</h1>
+            )}
         </BaseCard>
     );
 }
@@ -40,7 +48,7 @@ export function RoleCard({
             <h1 className="text-xl">
                 {isFormer && "former"} <span className="font-bold">{role}</span>{" "}
                 at{" "}
-                <Link to={org.url} className="font-bold">
+                <Link to={org.url} className="font-bold underline">
                     {org.name}
                 </Link>
             </h1>
@@ -65,19 +73,49 @@ export function WorkCard({
     url: string;
     image: string;
 }) {
+    const [isShowImage, setShowImage] = useState(false);
+
     return (
-        <BaseCard>
-            <div className="flex justify-between">
-                <div>
-                    <Link to={url} className="text-xl font-bold underline">
-                        {title}
+        <div className="transition duration-500 ease-in-out hover:scale-[1.02] bg-white/5 h-fit border border-white/10 shadow-md">
+            <div className="p-6">
+                <div className="flex justify-between">
+                    <div>
+                        <Link to={url} className="text-xl font-bold underline">
+                            {title}
+                        </Link>
+                        <p>{description}</p>
+                    </div>
+                    <Link to={org.url} className="text-sm underline">
+                        {org.name}
                     </Link>
-                    <p>{description}</p>
                 </div>
-                <Link to={org.url} className="text-sm underline">
-                    {org.name}
-                </Link>
             </div>
-        </BaseCard>
+            <button
+                type="button"
+                className="w-full bg-white/5 text-xs py-1.5 transition duration-500 ease-in-out hover:bg-white/10"
+                onClick={(e) => {
+                    e.preventDefault();
+                    setShowImage(!isShowImage);
+                }}
+            >
+                {isShowImage ? "Close" : "Open"} preview
+            </button>
+            {isShowImage && (
+                <div
+                    className="bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${image})`,
+                    }}
+                >
+                    <div className="h-full p-4 flex justify-center backdrop-blur-sm bg-black/20">
+                        <img
+                            className="max-h-[200px] w-auto shadow-md"
+                            src={image}
+                            alt={`${title}_preview`}
+                        />
+                    </div>
+                </div>
+            )}
+        </div>
     );
 }

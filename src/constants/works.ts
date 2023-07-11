@@ -7,17 +7,17 @@ export const works = [
         title: "nSysBot",
         description: "บอทดิสคอร์ดสารพัดประโยชน์",
         url: "https://bot.nsys.site",
-        image: ""
+        image: "/images/nsys2.png"
     },
     {   
         org: {
             name: "nSys",
             url: "https://nsys.site"
         },
-        title: "nSysClient",
+        title: "nSysLava",
         description: "Client Lavalink คุณภาพดี แตกต่างด้วยฟีเจอร์ที่หลากหลาย",
         url: "https://www.npmjs.com/package/nsyslava",
-        image: ""
+        image: "/images/nsyslava.png"
     },
     {   
         org: {
@@ -27,7 +27,7 @@ export const works = [
         title: "beamx.store",
         description: "เว็บไซต์ขายสินค้า Roblox ของร้าน BeamX",
         url: "https://beamx.rdcw.xyz",
-        image: ""
+        image: "/images/beamx_website.png"
     },
     {   
         org: {
@@ -37,7 +37,7 @@ export const works = [
         title: "emiko.store",
         description: "เว็บไซต์ขายสินค้า Roblox ของร้าน Emiko Shop",
         url: "https://emiko.store",
-        image: ""
+        image: "/images/emiko_website.png"
     },
     {   
         org: {
@@ -47,7 +47,7 @@ export const works = [
         title: "gamekung.com",
         description: "เว็บไซต์ขายสินค้า Roblox ของร้าน GK Shop",
         url: "gamekung.com",
-        image: ""
+        image: "/images/gk_website.png"
     },
     {   
         org: {
@@ -57,7 +57,7 @@ export const works = [
         title: "smoslockshop.com",
         description: "เว็บไซต์ขายสินค้าของร้าน SmosLock Shop",
         url: "https://smoslockshop.com",
-        image: ""
+        image: "/images/smoslock_website.png"
     },
     {   
         org: {
@@ -67,7 +67,7 @@ export const works = [
         title: "royx.net",
         description: "เว็บไซต์ขายสินค้าของร้าน RoyX",
         url: "https://royx.net",
-        image: ""
+        image: "/images/royx_website.png"
     },
     {   
         org: {
@@ -77,7 +77,7 @@ export const works = [
         title: "ar-cade.altsera.com",
         description: "เว็บไซต์ขายสินค้า Genshin ของร้าน Ar-cade",
         url: "https://ar-cade.altsera.com/",
-        image: ""
+        image: "/images/ar-cade_website.png"
     },
     {   
         org: {
@@ -87,7 +87,7 @@ export const works = [
         title: "smokebux.net",
         description: "เว็บไซต์ขายสินค้าของร้าน SmokeBux",
         url: "https://smokebux.rdcw.xyz/",
-        image: ""
+        image: "/images/smokebux_website.png"
     },
     {   
         org: {
@@ -97,7 +97,7 @@ export const works = [
         title: "zaydenshop.com",
         description: "เว็บไซต์ขายสินค้าของร้าน ZaydenShop",
         url: "https://zaydenshop.com",
-        image: ""
+        image: "/images/zaydenshop_website.png"
     },
     {   
         org: {
@@ -107,26 +107,26 @@ export const works = [
         title: "easydonate.app",
         description: "บริการรับเงินโดเนทที่ได้รับเงินเต็มจำนวน",
         url: "https://easydonate.app",
-        image: ""
+        image: "/images/easydonate_website.png"
     },
     {   
         org: {
             name: "RDCW",
-            url: "https://bloxcodeth.store"
+            url: "https://rdcw.th"
         },
         title: "bloxcodeth.store",
         description: "เว็บไซต์ขายสินค้าของร้าน BloxCodeTH",
         url: "https://bloxcodeth.store",
-        image: ""
+        image: "/images/bloxcodeth_rd_website.png"
     },
     {   
         org: {
             name: "RDCW",
-            url: "https://bloxcodeth.store"
+            url: "https://rdcw.th"
         },
         title: "maebshop.com",
         description: "เว็บไซต์ขายสินค้า Valorant ของร้าน Maeb Shop",
         url: "https://maebshop.com",
-        image: ""
+        image: "/images/maebshop_website.png"
     },
 ]

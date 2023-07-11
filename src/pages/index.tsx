@@ -19,7 +19,7 @@ export default function HomePage() {
 
                 <div className="relative h-full flex justify-center items-center">
                     <div className="text-center">
-                        <h1 className="text-8xl sm:text-9xl font-bold main-text-animate mb-8">
+                        <h1 className="text-8xl sm:text-9xl font-bold main-text-animate drop-shadow-md mb-8">
                             nSys
                         </h1>
                         <p className="text-2xl font-thin description-text-animate">

@@ -17,7 +17,8 @@ export const facts = [
     },
     {
         title: "สถานะ",
-        content: "มีแฟนแล้ว"
+        content: "มีแฟนแล้ว",
+        isLoveEasterEgg: true
     },
     {
         title: "ศึกษาอยู่ที่",
