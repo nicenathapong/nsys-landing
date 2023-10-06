@@ -81,7 +81,7 @@ export const roles = [
             image: "",
             url: "https://www.youtube.com/@12TimeWeCCG"
         },
-        description: "Febuary 2021 - June 2022",
+        description: "Febuary 2021 - June 2021",
         isFormer: true
     },
 ]
