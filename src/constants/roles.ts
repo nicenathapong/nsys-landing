@@ -9,6 +9,15 @@ export const roles = [
         description: "June 9, 2021 - Present"
     },
     {
+        role: "Co-Founder",
+        org: {
+            name: "AONA",
+            image: "",
+            url: "https://aona.in.th"
+        },
+        description: "November 11, 2021 - Present"
+    },
+    {
         role: "CEO, Founder",
         org: {
             name: "EasyDonate",
@@ -38,11 +47,20 @@ export const roles = [
     {
         role: "Co-Founder",
         org: {
-            name: "Any",
+            name: "AONA Cloud",
             image: "",
-            url: "https://any.in.th"
+            url: "https://cloud.aona.in.th"
         },
-        description: "November 11, 2021 - Present"
+        description: "August 28, 2023 - Present"
+    },
+    {
+        role: "Co-Founder",
+        org: {
+            name: "Lamy",
+            image: "",
+            url: "https://lamy.pw"
+        },
+        description: "March 28, 2023 - Present"
     },
     {
         role: "Co-Owner",

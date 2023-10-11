@@ -129,4 +129,14 @@ export const works = [
         url: "https://maebshop.com",
         image: "/images/maebshop_website.png"
     },
+    {   
+        org: {
+            name: "Altsera",
+            url: "https://altsera.com"
+        },
+        title: "arcade.topup.in.th",
+        description: "เว็บไซต์เติมเกมออนไลน์ของ Ar-cade",
+        url: "https://arcade.topup.in.th/",
+        image: "/images/arcade-topup-website.png"
+    },
 ]

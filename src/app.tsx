@@ -1,9 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages";
 import Navbar from "./components/navbar";
 import FactsPage from "./pages/facts";
 import WorksPage from "./pages/works";
 import RolesPage from "./pages/roles";
+import { AnimatePresence } from "framer-motion";
 
 const routes = [
     {
@@ -12,15 +13,15 @@ const routes = [
     },
     {
         path: "/facts",
-        element: <FactsPage />
+        element: <FactsPage />,
     },
     {
         path: "/roles",
-        element: <RolesPage />
+        element: <RolesPage />,
     },
     {
         path: "/works",
-        element: <WorksPage />
+        element: <WorksPage />,
     },
     {
         path: "*",
@@ -34,15 +35,25 @@ export default function App() {
             <div className="bg-black text-white">
                 <BrowserRouter>
                     <div className="min-h-screen">
-                        <Routes>
-                            {routes.map((r) => (
-                                <Route {...r} />
-                            ))}
-                        </Routes>
+                        <RoutesWithTransition />
                         <Navbar />
                     </div>
                 </BrowserRouter>
             </div>
         </>
+    );
+}
+
+function RoutesWithTransition() {
+    const location = useLocation();
+
+    return (
+        <AnimatePresence mode="wait">
+            <Routes key={location.pathname} location={location}>
+                {routes.map((route, i) => (
+                    <Route key={i} {...route} />
+                ))}
+            </Routes>
+        </AnimatePresence>
     );
 }

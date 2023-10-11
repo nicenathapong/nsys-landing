@@ -10,9 +10,9 @@ export default function Navbar() {
             }`}
         >
             <ul className="w-auto sm:w-[20%] hidden sm:flex items-center justify-center sm:justify-start space-x-6">
-                <a href="https://any.in.th" title="Any">
+                <a href="https://aona.in.th" title="Any">
                     <img
-                        alt="Any"
+                        alt="AONA"
                         width="32"
                         height="32"
                         src="images/any-logo-fit.png"
