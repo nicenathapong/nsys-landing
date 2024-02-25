@@ -3,16 +3,18 @@ import "../styles/index.css";
 export default function HomePage() {
     return (
         <>
-            <div
-                className="relative h-screen overflow-hidden px-4"
-            >
-                <img
+            <div className="relative h-screen overflow-hidden px-4">
+                {/* <img
                     className="absolute top-0 left-0 w-full h-full object-cover bg-aura-animate"
                     src="/images/bg-dark-blue-aura.png"
                     alt="bg-dark-blue-aura"
-                />
+                /> */}
+                <div className="absolute top-0 left-0 w-full h-full bg-aura-animate">
+                    <div className="absolute top-0 left-0 w-full h-full z-0 aona-gradient-1"></div>
+                    <div className="absolute top-0 left-0 w-full h-full z-10 aona-gradient-2"></div>
+                </div>
                 <img
-                    className="absolute top-0 left-0 w-full h-full object-cover object-left bg-photo"
+                    className="absolute top-0 left-0 z-20 w-full h-full object-cover object-left bg-photo"
                     src="/images/IMG_9260.jpg"
                     alt="IMG_9260"
                 />

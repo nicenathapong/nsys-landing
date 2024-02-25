@@ -5,7 +5,7 @@ export default function Navbar() {
     const isHomePage = location.pathname === "/";
     return (
         <div
-            className={`fixed pt-16 p-8 w-full bg-gradient-to-t from-black/40 via-black/40 to-black/0 bottom-0 flex flex-col sm:flex-row justify-between items-center sm:items-end gap-6 sm:gap-0 ${
+            className={`fixed z-50 pt-16 p-8 w-full bg-gradient-to-t from-black/40 via-black/40 to-black/0 bottom-0 flex flex-col sm:flex-row justify-between items-center sm:items-end gap-6 sm:gap-0 ${
                 isHomePage ? "navbar-home-animate" : ""
             }`}
         >

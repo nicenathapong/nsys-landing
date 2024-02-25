@@ -5,6 +5,7 @@ import FactsPage from "./pages/facts";
 import WorksPage from "./pages/works";
 import RolesPage from "./pages/roles";
 import { AnimatePresence } from "framer-motion";
+import "./styles/index.css";
 
 const routes = [
     {

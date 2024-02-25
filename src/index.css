@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Ubuntu', 'IBM Plex Sans Thai', sans-serif;
+    font-family: "Ubuntu", "IBM Plex Sans Thai", sans-serif;
 }
 
 input:-webkit-autofill,
@@ -27,10 +27,26 @@ input:-webkit-autofill:active {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background: rgb(255, 255, 255, .1);
+    background: rgb(255, 255, 255, 0.1);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255, .2);
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.aona-gradient-1 {
+    background-image: linear-gradient(
+        30deg,
+        #0000ff 0%,
+        rgba(0, 0, 255, 0) 80%
+    );
+}
+
+.aona-gradient-2 {
+    background-image: linear-gradient(
+        30deg,
+        #3b82f6 0%,
+        rgba(59, 130, 246, 0) 40%
+    );
 }
